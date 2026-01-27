@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikcraft - Bicicletas Elétricas</title>
+    <meta
+      name="description"
+      content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
+    />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link href="./css/style.css" rel="preload" as="style" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="./js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+    </style>
+  </head>
+
+  <body class="font-[Google_Sans]" id="home">
+    <!-- header -->
+    <header class="bg-[#000000] p-4 md:p-0 text-white wrap-normal">
+      <div
+        class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto"
+      >
+        <a href="./"><img src="img/bikcraft.svg" alt="" /></a>
+        <nav class="flex gap-4 font-semibold text-md md:text-xl">
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Bicicletas
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Seguros
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Contato
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <main
+      class="bg-[#111111] p-4 md:p-0 md:bg-[#000000] text-white shadow-[inset_0_-120px_#fff]"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-300">
+        <div class="flex flex-col self-end gap-6 py-4 pb-0 md:pb-72">
+          <h1 class="text-4xl md:text-7xl font-bold mb-2">
+            Bicicletas feitas sob medida<span class="text-[#ffbb00]">.</span>
+          </h1>
+          <p class="text-[#cccccc] text-lg md:text-2xl">
+            Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
+            para você. Explore o mundo na sua velocidade com a Bikcraft.
+          </p>
+          <a
+            class="mb-6 md:mb-0 uppercase bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-3 md:py-4 px-4 md:px-6 rounded font-semibold w-fit text-md md:text-lg"
+            href="./bicicletas.html"
+            >Escolha a sua</a
+          >
+        </div>
+        <picture>
+          <source
+            media="(max-width: 800px)"
+            srcset="img/bicicleta/nimbus1.jpg"
+          />
+          <img
+            class="h-full w-full object-cover rounded"
+            src="img/fotos/introducao.jpg"
+            alt="Bicicleta preta com motor elétrico"
+            width="640"
+            height="800"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <!-- biciletas -->
+    <section class="py-16 px-4">
+      <h1 class="text-4xl md:text-7xl max-w-300 px-5 mx-auto font-semibold">
+        escolha a sua<span class="text-[#ffbb00]">.</span>
+      </h1>
+      <div class="mx-auto max-w-7xl px-4 py-12">
+        <div class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:pb-0 md:snap-none">
+          <div class="group cursor-pointer shrink-0 w-70 snap-center md:w-auto">
+            <img
+              class="rounded object-cover w-full"
+              src="img/bicicletas/magic-home.jpg"
+              alt=""
+              width="400"
+              height="400"
+            />
+
+            <h2 class="relative text-2xl md:text-3xl font-bold mt-4 flex items-center before:content-[''] before:inline-block before:w-3 before:h-2 before:bg-[#ffbb00] before:mr-2 before:transition-all before:duration-200 group-hover:before:w-6">
+              Magic Might
+            </h2>
+
+            <span class="text-lg font-semibold pl-5 text-[#717171]">R$ 2499</span>
+          </div>
+
+          <div class="group cursor-pointer shrink-0 w-70 snap-center md:w-auto">
+            <img
+              class="rounded object-cover w-full"
+              src="img/bicicletas/nimbus-home.jpg"
+              alt=""
+              width="400"
+              height="400"
+            />
+
+            <h2 class="relative text-2xl md:text-3xl font-bold mt-4 flex items-center before:content-[''] before:inline-block before:w-3 before:h-2 before:bg-[#ffbb00] before:mr-2 before:transition-all before:duration-200 group-hover:before:w-6">
+              Nimbus Stark
+            </h2>
+
+            <span class="text-lg font-semibold pl-5 text-[#717171]">R$ 4999</span>
+          </div>
+
+          <div class="group cursor-pointer shrink-0 w-70 snap-center md:w-auto">
+            <img
+              class="rounded object-cover w-full"
+              src="img/bicicletas/nebula-home.jpg"
+              alt=""
+              width="400"
+              height="400"
+            />
+
+            <h2 class="relative text-2xl md:text-3xl font-bold mt-4 flex items-center before:content-[''] before:inline-block before:w-3 before:h-2 before:bg-[#ffbb00] before:mr-2 before:transition-all before:duration-200 group-hover:before:w-6">
+              Nebula Cosmic
+            </h2>
+
+            <span class="text-lg font-semibold pl-5 text-[#717171]">R$ 3999</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tecnologias -->
+    <section class="bg-[#111111] text-white md:shadow-[inset_0_80px_#fff,inset_0_-80px_#fff]">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 max-w-300 mx-auto px-4 md:px-0">
+        <div class="py-16 md:py-44">
+          <span class="font-semibold text-xl md:text-2xl text-[#b2b2b2] mb-5 inline-block uppercase">Tecnologia Avançada</span>
+          <h2 class="text-4xl md:text-7xl font-bold mb-8">você escolhe as suas cores e componentes<span class="text-[#ffbb00]">.</span></h2>
+          <p class="text-lg md:text-3xl text-[#b2b2b2] mb-5">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+          <a href="#" class="group relative text-[#ffbb00] hover:text-white transition-all duration-300 text-2xl mb-12 md:mb-20 inline-block py-1 uppercase font-semibold">escolha um modelo <span class="absolute bottom-0 left-0 h-1 w-full bg-[#ffbb00] transition-all duration-300 group-hover:w-0"></span></a>
+          <div class="flex flex-col md:flex-row gap-4">
+
+            <div>
+              <img class="mb-2 w-8" src="img/icones/eletrica.svg" alt="">
+              <h3 class="font-bold text-lg mb-2 w-max">Motor Elétrico</h3>
+              <p class="text-[#b2b2b2]">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
+            </div>
+
+            <div>
+              <img class="mb-2 w-8" src="img/icones/rastreador.svg" alt="">
+              <h3 class="font-bold text-lg mb-2 w-max">Rastreador</h3>
+              <p class="text-[#b2b2b2]">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div>
+          <img class="hidden md:block w-full h-full object-cover object-left" src="img/fotos/tecnologia.jpg" alt="" width="700" height="1120">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- parceiros -->
+    <section class="pt-16 pb-20 px-4">
+      <h2 class="text-4xl md:text-7xl max-w-300 mx-auto font-semibold mb-8 md:mb-16">nossos parceiros<span class="text-[#ffbb00]">.</span></h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 max-w-350 mx-auto px-5">
+        <li class="flex p-8 border-b-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/caravan.svg" alt="Caravan" width="140" height="38"></li>
+        <li class="flex p-8 border-l-2 border-b-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/ranek.svg" alt="Ranek" width="149" height="36"></li>
+        <li class="flex p-8 md:border-l-2 border-b-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/handel.svg" alt="Handel" width="140" height="50"></li>
+        <li class="flex p-8 border-l-2 border-b-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/dogs.svg" alt="Dogs" width="152" height="39"></li>
+        <li class="flex p-8 border-b-2 md:border-b-0 border-[#dedede]"><img class="m-auto" src="./img/parceiros/lescone.svg" alt="LeScone" width="208" height="41"></li>
+        <li class="flex p-8 border-b-2 md:border-b-0 border-l-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/flexblog.svg" alt="FlexBlog" width="165" height="38"></li>
+        <li class="flex p-8 md:border-l-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/wildbeast.svg" alt="Wildbeast" width="196" height="34"></li>
+        <li class="flex p-8 border-l-2 border-[#dedede]"><img class="m-auto" src="./img/parceiros/surfbot.svg" alt="Surfbot" width="200" height="49"></li>
+      </ul>
+    </section>
+
+    <!-- depoimento -->
+    <section class="grid grid-cols-1 md:grid-cols-2 bg-[#ffbb00] text-center">
+      <div>
+        <img class="w-full h-full object-cover max-h-50 md:max-h-130" src="img/fotos/depoimento.jpg" alt="Pessoa pedalando uma bicileta Bikcraft" width="780" height="680">
+      </div>
+      <div class="flex flex-col items-center md:items-end overflow-hidden py-10 px-5 md:pt-10 md:pr-10 md:pb-20 md:pl-20">
+        <blockquote class="mt-auto">
+        <p class="relative text-2xl md:text-4xl text-[#332200] mb-6 block font-extrabold italic font-[Merriweather] max-w-[32ch]">Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
+        </blockquote>
+        <span class="text-xl md:text-xl text-[#664400] font-bold">Sâmia Mesquita</span>
+      </div>
+    </section>
+
+    <!-- seguros -->
+     <section class="bg-[#111111] text-white py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <h2 class="text-4xl md:text-7xl font-semibold mb-4 md:mb-8 col-span-1 md:col-span-2">
+          seguros<span class="text-[#ffbb00]">.</span>
+        </h2>
+
+        <!-- primeiro card -->
+        <div class="bg-black rounded p-6 md:p-10 md:pl-16">
+          
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-8">
+            <h3 class="text-3xl font-bold uppercase text-[#9c9c9c]">Prata</h3>
+            
+            <div class="text-left md:text-right">
+              <span class="block text-3xl font-bold">R$ 199</span>
+              <span class="text-sm text-[#9c9c9c]">mensal</span>
+            </div>
+          </div>
+
+          <ul class="flex flex-col gap-4 text-lg text-[#cccccc]">
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Duas trocas por ano
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Assistência técnica
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Suporte 08h às 18h
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Cobertura estadual
+            </li>
+          </ul>
+
+          <a href="#" class="mt-8 block w-full md:w-fit text-center bg-[#404040] hover:bg-[#595959] py-3 px-8 rounded uppercase font-bold transition-colors duration-300">
+            Inscreva-se
+          </a>
+        </div>
+
+        <!-- segundo card -->
+        <div class="bg-black rounded p-6 md:p-10 md:pl-16">
+          
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-8">
+            <h3 class="text-3xl font-bold uppercase text-[#ffbb00]">Ouro</h3>
+            
+            <div class="text-left md:text-right">
+              <span class="block text-3xl font-bold">R$ 299</span>
+              <span class="text-sm text-[#9c9c9c]">mensal</span>
+            </div>
+          </div>
+
+          <ul class="flex flex-col gap-4 text-lg text-[#cccccc]">
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Cinco trocas por ano
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Assistência especial
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Suporte 24h
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Cobertura nacional
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Desconto em parceiros
+            </li>
+            <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+              Acesso ao Clube Bikcraft
+            </li>
+          </ul>
+
+          <a href="#" class="mt-8 block w-full md:w-fit text-center bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-3 px-8 rounded uppercase font-bold transition-colors duration-300">
+            Inscreva-se
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#000000] text-white">
+      <div class="max-w-300 mx-auto py-16 px-4 grid grid-cols-1 md:grid-cols-3">
+        <img class="hidden md:flex" src="img/bikcraft.svg" alt="">
+        <div>
+          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Contatos</h3>
+          <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
+            <li>+55 (85) 99999-0000</li>
+            <li class="relative">contatobikecraft@gmail.com <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
+            <li>Rua 1, 1185 - Brejo Santo</li>
+            <li class="relative">Forteleza - CE <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
+          </ul>
+          <div class="flex pt-8 pb-16 gap-8">
+            <a href="#"><img src="img/redes/youtube.svg" alt=""></a>
+            <a href="#"><img src="img/redes/instagram.svg" alt=""></a>
+            <a href="#"><img src="img/redes/facebook.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Informações</h3>
+          <div>
+            <nav>
+              <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
+                <li><a class="hover:text-white" href="#">Bicicletas</a></li>
+                <li><a class="hover:text-white" href="#">Seguros</a></li>
+                <li><a class="hover:text-white" href="#">Contatos</a></li>
+                <li><a class="hover:text-white" href="#">Termos e condições</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <p class="text-lg text-[#b2b2b2] font-semibold mt-10">Bikcraft © Alguns direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
