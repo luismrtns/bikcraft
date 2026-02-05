@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikcraft - Bicicletas  </title>
+    <meta
+      name="description"
+      content="nossas bicicletas"
+    />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link href="./css/style.css" rel="preload" as="style" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="./js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+    </style>
+  </head>
+</head>
+<body>
+
+  <header class="bg-[#000000] p-4 md:p-0 text-white wrap-normal">
+      <div
+        class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto"
+      >
+        <a href="./"><img src="img/bikcraft.svg" alt="" /></a>
+        <nav class="flex gap-4 font-semibold text-md md:text-xl">
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Bicicletas
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Seguros
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+          <a
+            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+            href="#"
+            >Contato
+            <span
+              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+            ></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+  
+  <main>
+    <div class="bg-[#111111] text-white py-16 px-4 md:px-0">
+      <div class="max-w-300 mx-auto">
+        <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">Escolha a melhor para você</p>
+        <h1 class="text-3xl md:text-7xl font-semibold">nossas bicicletas<span class="text-[#ffbb00]">.</span></h1>
+      </div>
+    </div>
+
+    <div>
+      <div class="max-w-300 mx-auto flex gap-8 py-16">
+        <div class="relative">
+          <img src="img/bicicletas/nimbus.jpg" alt="bicicleta preta" width="1120" height="680">
+          <span class="absolute top-5 right-0 bg-black text-lg py-2 px-4 text-white font-semibold rounded">R$ 4999</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl font-bold">Nimbus Stark</h2>
+          <p class="font-semibold text-[#717171]">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="flex gap-2 font-semibold text-[#595959] text-lg"><img src="img/icones/eletrica.svg" alt="">Motor elétrico</li>
+            <li class="flex gap-2 font-semibold text-[#595959] text-lg"><img src="img/icones/carbono.svg" alt="">fibra de carbono</li>
+            <li class="flex gap-2 font-semibold text-[#595959] text-lg"><img src="img/icones/velocidade.svg" alt="">50km/h</li>
+            <li class="flex gap-2 font-semibold text-[#595959] text-lg"><img src="img/icones/rastreador.svg" alt="">Rastreador</li>
+          </ul>
+          <a class="flex items-center gap-2 text-lg uppercase ml-auto bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-3 md:py-4 px-4 md:px-8 rounded font-bold" href="#">Mais sobre <img class="h-3" src="img/icones/seta.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-[#000000] text-white">
+      <div class="max-w-300 mx-auto py-16 px-4 md:px-0 grid grid-cols-1 md:grid-cols-3">
+        <img class="hidden md:flex" src="img/bikcraft.svg" alt="">
+        <div>
+          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Contatos</h3>
+          <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
+            <li>+55 (85) 99999-0000</li>
+            <li class="relative">contatobikecraft@gmail.com <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
+            <li>Rua 1, 1185 - Brejo Santo</li>
+            <li class="relative">Forteleza - CE <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
+          </ul>
+          <div class="flex pt-8 pb-16 gap-8">
+            <a href="#"><img src="img/redes/youtube.svg" alt=""></a>
+            <a href="#"><img src="img/redes/instagram.svg" alt=""></a>
+            <a href="#"><img src="img/redes/facebook.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Informações</h3>
+          <div>
+            <nav>
+              <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
+                <li><a class="hover:text-white" href="#">Bicicletas</a></li>
+                <li><a class="hover:text-white" href="#">Seguros</a></li>
+                <li><a class="hover:text-white" href="#">Contatos</a></li>
+                <li><a class="hover:text-white" href="#">Termos e condições</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <p class="text-lg text-[#b2b2b2] font-semibold mt-10">Bikcraft © Alguns direitos reservados.</p>
+      </div>
+    </footer>
+</body>
+</html>
