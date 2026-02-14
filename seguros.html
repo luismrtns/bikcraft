@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bikcraft - seguros</title>
+    <meta
+            name="description"
+            content="nossas bicicletas"
+    />
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link href="./css/style.css" rel="preload" as="style" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="./js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+    </style>
+</head>
+<body>
+<header class="bg-[#000000] p-4 md:p-0 text-white wrap-normal">
+    <div class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto">
+        <a href="./"><img src="img/bikcraft.svg" alt=""/></a>
+        <nav class="flex gap-4 font-semibold text-md md:text-xl">
+            <a class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none" href="bicicletas.html"
+            >Bicicletas
+                <span class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+                ></span
+                ></a>
+            <a class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+                    href="#"
+            >Seguros
+                <span class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+                ></span
+                ></a>
+            <a class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
+                    href="#"
+            >Contato
+                <span class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
+                ></span
+                ></a>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="w-full bg-[#111111] text-white py-16 px-4 md:px-0">
+        <div class="max-w-300 mx-auto relative">
+            <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">Escolha o seguro</p>
+            <h1 class="text-3xl md:text-7xl font-semibold">você seguro<span class="text-[#ffbb00]">.</span></h1>
+            <img class="absolute top-0 right-0 h-12 w-12" src="img/dec/bottom-left.svg" alt="">
+        </div>
+    </div>
+
+    <section class="bg-[#111111] text-white py-12 md:py-0">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <!-- primeiro card -->
+            <div class="bg-black rounded p-6 md:p-10 md:pl-16">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-8">
+                    <h3 class="text-3xl font-bold uppercase text-[#9c9c9c]">Prata</h3>
+
+                    <div class="text-left md:text-right">
+                        <span class="block text-3xl font-bold">R$ 199</span>
+                        <span class="text-sm text-[#9c9c9c]">mensal</span>
+                    </div>
+                </div>
+
+                <ul class="flex flex-col gap-4 text-lg text-[#cccccc]">
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Duas trocas por ano
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Assistência técnica
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Suporte 08h às 18h
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Cobertura estadual
+                    </li>
+                </ul>
+                <a href="#" class="mt-8 block w-full md:w-fit text-center bg-[#404040] hover:bg-[#595959] py-3 px-8 rounded uppercase font-bold transition-colors duration-300">
+                    Inscreva-se
+                </a>
+            </div>
+
+            <!-- segundo card -->
+            <div class="bg-black rounded p-6 md:p-10 md:pl-16">
+
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-8">
+                    <h3 class="text-3xl font-bold uppercase text-[#ffbb00]">Ouro</h3>
+
+                    <div class="text-left md:text-right">
+                        <span class="block text-3xl font-bold">R$ 299</span>
+                        <span class="text-sm text-[#9c9c9c]">mensal</span>
+                    </div>
+                </div>
+
+                <ul class="flex flex-col gap-4 text-lg text-[#cccccc]">
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Cinco trocas por ano
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Assistência especial
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Suporte 24h
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Cobertura nacional
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Desconto em parceiros
+                    </li>
+                    <li class="relative pl-8 flex items-center before:absolute before:left-0 before:w-3 before:h-2 before:bg-[url('/img/icones/lista.svg')] before:bg-no-repeat">
+                        Acesso ao Clube Bikcraft
+                    </li>
+                </ul>
+
+                <a href="#" class="mt-8 block w-full md:w-fit text-center bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-3 px-8 rounded uppercase font-bold transition-colors duration-300">
+                    Inscreva-se
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#000000] text-white py-16">
+        <div class="max-w-300 mx-auto">
+            <h2 class="text-4xl md:text-7xl font-semibold py-2 md:py-6 px-4 md:px-0">vantagens<span class="text-[#ffbb00]">.</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8">
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/eletrica.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Reparo Elétrico</h3>
+                    <p class="text-[#9c9c9c]">Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas
+                        estamos aqui para caso ocorra.</p>
+                </div>
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/carbono.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Carbono</h3>
+                    <p class="text-[#9c9c9c]">Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar.</p>
+                </div>
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/sustentavel.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Sustentável</h3>
+                    <p class="text-[#9c9c9c]">Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto.</p>
+                </div>
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/rastreador.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Recuperação</h3>
+                    <p class="text-[#9c9c9c]">Utilizamos o GPS da sua Bikcraft em conjunto com especialistas em segurança para efetuarmos a recuperação.</p>
+                </div>
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/seguro.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Segurança</h3>
+                    <p class="text-[#9c9c9c]">Com o seguro Bikcraft você pode ficar tranquilo em saber que o seu dinheiro não será perdido em casos de roubo.</p>
+                </div>
+                <div class="p-6 flex flex-col gap-3">
+                    <img class="h-8 w-8" src="img/icones/velocidade.svg" alt="">
+                    <h3 class="text-2xl font-semibold">Reparo Elétrico</h3>
+                    <p class="text-[#9c9c9c]">A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
