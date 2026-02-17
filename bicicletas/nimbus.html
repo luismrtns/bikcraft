@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bikcraft - seguros</title>
+    <title>Bikcraft - Nimbus Stark</title>
     <meta
             name="description"
             content="bicicleta nimbus"
     />
 
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
 
-    <link href="./css/style.css" rel="preload" as="style" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/input.css" />
-    <link rel="stylesheet" href="dist/output.css" />
-    <script src="./js/script.js" defer></script>
+    <link href="../css/style.css" rel="preload" as="style" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/input.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="../js/script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,7 @@
 <body>
 <header class="bg-[#000000] px-6 text-white wrap-normal">
     <div class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto">
-        <a href="./"><img src="img/bikcraft.svg" alt=""/></a>
+        <a href="./"><img src="../img/bikcraft.svg" alt=""/></a>
         <nav class="flex gap-4 font-semibold text-md md:text-xl">
             <a class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none" href="bicicletas.html"
             >Bicicletas
@@ -53,19 +53,98 @@
         </nav>
     </div>
 </header>
-<main>
-    <div class="w-full bg-[#111111] text-white py-8 md:py-16 px-6">
+<main class="bg-[#111111] text-white">
+    <div class="w-full py-8 md:py-16 px-6">
         <div class="max-w-300 mx-auto relative">
-            <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">Escolha o seguro</p>
-            <h1 class="text-3xl md:text-7xl font-semibold">você seguro<span class="text-[#ffbb00]">.</span></h1>
-            <img class="absolute top-0 right-0 h-12 w-12" src="img/dec/bottom-left.svg" alt="">
+            <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">R$4999</p>
+            <h1 class="text-3xl md:text-7xl font-semibold">Nimbus Stark<span class="text-[#ffbb00]">.</span></h1>
+            <img class="absolute top-0 right-0 h-12 w-12" src="../img/dec/bottom-left.svg" alt="">
         </div>
     </div>
+    <div class="grid grid-cols-2 gap-10 max-w-300 mx-auto">
+<!--        imagens-->
+        <div>
+            <img src="../img/bicicleta/nimbus1.jpg" alt="">
+            <img src="../img/bicicleta/nimbus2.jpg" alt="">
+            <img src="../img/bicicleta/nimbus3.jpg" alt="">
+        </div>
+<!--        conteudo-->
+        <div>
+            <p class="text-2xl font-semibold text-[#9c9c9c]">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+            <div class="flex items-center gap-4">
+                <a class="mt-8 inline-block gap-2 text-lg uppercase bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-3 md:py-4 px-4 md:px-8 rounded font-bold"
+                   href="#">comprar agora</a>
+                <div class="flex flex-col gap-2 mt-8">
+                    <span class="flex gap-2 bg-[#000000] text-[#9c9c9c] p-1 text-sm font-semibold w-fit rounded"><img class="h-5 w-5" src="../img/icones/entrega.svg" alt="">entrega em 5 dias</span>
+                    <span class="flex gap-2 bg-[#000000] text-[#9c9c9c] p-1 text-sm font-semibold w-fit rounded"><img class="h-5 w-5" src="../img/icones/estoque.svg" alt="">18 em estoque</span>
+                </div>
+            </div>
+<!--        cards informações-->
+            <h3 class="mt-8 mb-4 uppercase text-sm font-semibold">informações</h3>
+            <div class="bg-[#000000] rounded">
+                <div class="max-w-300 mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 py-2">
+                        <div class="p-6 flex flex-col gap-3">
+                            <img class="h-8 w-8" src="../img/icones/eletrica.svg" alt="">
+                            <h3 class="text-xl font-semibold">Motor Elétrico</h3>
+                            <p class="text-[#9c9c9c] font-semibold text-sm">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+                        </div>
+                        <div class="p-6 flex flex-col gap-3">
+                            <img class="h-8 w-8" src="../img/icones/carbono.svg" alt="">
+                            <h3 class="text-xl font-semibold">Fibra de Carbono</h3>
+                            <p class="text-[#9c9c9c] font-semibold text-sm">Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
+                        </div>
+                        <div class="p-6 flex flex-col gap-3">
+                            <img class="h-8 w-8" src="../img/icones/velocidade.svg" alt="">
+                            <h3 class="text-xl font-semibold">50km/h</h3>
+                            <p class="text-[#9c9c9c] font-semibold text-sm">A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                        </div>
+                        <div class="p-6 flex flex-col gap-3">
+                            <img class="h-8 w-8" src="../img/icones/rastreador.svg" alt="">
+                            <h3 class="text-xl font-semibold">Rastreador</h3>
+                            <p class="text-[#9c9c9c] font-semibold text-sm">Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            ficha técnica-->
+            <div>
+                <h2 class="mt-8 mb-4 uppercase text-sm font-semibold">ficha técnica</h2>
+                <div class="bg-[#000000] rounded p-6">
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Peso</span>
+                        <span class="text-[#9c9c9c]">9 kg</span>
+                    </div>
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Altura</span>
+                        <span class="text-[#9c9c9c]">60 cm</span>
+                    </div>
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Largura</span>
+                        <span class="text-[#9c9c9c]">120 cm</span>
+                    </div>
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Profundidade</span>
+                        <span class="text-[#9c9c9c]">10 cm</span>
+                    </div>
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Marchas</span>
+                        <span class="text-[#9c9c9c]">16</span>
+                    </div>
+                    <div class="flex justify-between border-b p-1 border-[#2e2e2e]">
+                        <span class="text-[#b2b2b2]">Roda</span>
+                        <span class="text-[#9c9c9c]">29</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </main>
 <footer class="bg-[#000000] text-white">
     <div class="max-w-300 mx-auto py-16 px-4 md:px-0 grid grid-cols-1 md:grid-cols-3">
-        <img class="hidden md:flex" src="img/bikcraft.svg" alt="">
+        <img class="hidden md:flex" src="../img/bikcraft.svg" alt="">
         <div>
             <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Contatos</h3>
             <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
@@ -75,9 +154,9 @@
                 <li class="relative">Forteleza - CE <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
             </ul>
             <div class="flex pt-8 pb-16 gap-8">
-                <a href="#"><img src="img/redes/youtube.svg" alt=""></a>
-                <a href="#"><img src="img/redes/instagram.svg" alt=""></a>
-                <a href="#"><img src="img/redes/facebook.svg" alt=""></a>
+                <a href="#"><img src="../img/redes/youtube.svg" alt=""></a>
+                <a href="#"><img src="../img/redes/instagram.svg" alt=""></a>
+                <a href="#"><img src="../img/redes/facebook.svg" alt=""></a>
             </div>
         </div>
 
@@ -86,10 +165,10 @@
             <div>
                 <nav>
                     <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
-                        <li><a class="hover:text-white" href="bicicletas.html">Bicicletas</a></li>
-                        <li><a class="hover:text-white" href="#">Seguros</a></li>
+                        <li><a class="hover:text-white" href="../bicicletas.html">Bicicletas</a></li>
+                        <li><a class="hover:text-white" href="../seguros.html">Seguros</a></li>
                         <li><a class="hover:text-white" href="#">Contatos</a></li>
-                        <li><a class="hover:text-white" href="#">Termos e condições</a></li>
+                        <li><a class="hover:text-white" href="../termos.html">Termos e condições</a></li>
                     </ul>
                 </nav>
             </div>
