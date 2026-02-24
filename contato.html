@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft - Contatos</title>
@@ -28,127 +27,98 @@
       @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
     </style>
-  </head>
 </head>
-<body>
+<body class="font-sans antialiased bg-[#f5f5f5]">
 
-  <header class="bg-[#000000] p-4 md:p-0 text-white wrap-normal">
-      <div
-        class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto"
-      >
-        <a href="./"><img src="img/bikcraft.svg" alt="" /></a>
-        <nav class="flex gap-4 font-semibold text-md md:text-xl">
-          <a
-            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
-            href="bicicletas.html"
-            >Bicicletas
-            <span
-              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
-            ></span
-          ></a>
-          <a
-            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
-            href="seguros.html"
-            >Seguros
-            <span
-              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
-            ></span
-          ></a>
-          <a
-            class="group relative p-2 md:p-4 transition-all md:bg-transparent md:hover:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none"
-            href="contato.html"
-            >Contato
-            <span
-              class="hidden md:flex absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"
-            ></span
-          ></a>
-        </nav>
-      </div>
-    </header>
-  
-  <main>
-    <div class="bg-[#111111] text-white py-16 px-4 md:px-0">
-      <div class="max-w-300 mx-auto">
-        <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">Respostas em até 24H</p>
-        <h1 class="text-3xl md:text-7xl font-semibold">nosso contato<span class="text-[#ffbb00]">.</span></h1>
-      </div>
+<header class="bg-[#000000] p-4 md:p-0 text-white">
+  <div class="flex flex-col md:flex-row md:items-center gap-6 justify-between py-6 max-w-300 mx-auto px-4">
+    <a href="./"><img src="img/bikcraft.svg" alt="Bikcraft" /></a>
+    <nav class="flex gap-4 font-semibold text-md md:text-xl">
+      <a class="group relative p-2 md:p-4 transition-all md:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none" href="bicicletas.html">
+        Bicicletas
+        <span class="hidden md:block absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"></span>
+      </a>
+      <a class="group relative p-2 md:p-4 transition-all md:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none" href="seguros.html">
+        Seguros
+        <span class="hidden md:block absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"></span>
+      </a>
+      <a class="group relative p-2 md:p-4 transition-all md:bg-transparent bg-[#111111] hover:bg-[#2e2e2e] rounded md:rounded-none" href="contato.html">
+        Contato
+        <span class="hidden md:block absolute bottom-3 left-4 h-0.5 w-0 bg-[#ffbb00] transition-all duration-300 group-hover:w-8"></span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="bg-[linear-gradient(#111111_600px,#f5f5f5_0%)]">
+
+  <div class="py-16 px-4">
+    <div class="max-w-300 mx-auto">
+      <p class="text-[#b2b2b2] text-xl md:text-2xl uppercase font-semibold">Respostas em até 24H</p>
+      <h1 class="text-4xl md:text-7xl font-semibold text-white">nosso contato<span class="text-[#ffbb00]">.</span></h1>
     </div>
+  </div>
 
-    <div class="grid grid-cols-[5fr_7fr] max-w-300 mx-auto">
-      <section class="bg-[#000000] text-white px-16 py-16">
-        <h2 class="text-xl font-semibold mb-8">Loja online</h2>
-        <div class="flex flex-col gap-2 pl-6 text-[#b2b2b2] bg-[url(/img/icones/local.svg)] bg-no-repeat">
-          <p class="flex gap-2">Rua 1, 1185 - Brejo Santo</p>
-          <p>Fortaleza - CE</p>
-          <p>Brasil - Terra - Via Láctea</p>
-        </div>
-        <address class="flex flex-col gap-2 text-[#b2b2b2] mt-8 pl-6 bg-[url(/img/icones/email.svg)] bg-no-repeat">
-          <a class="flex gap-2" href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
-          <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
-          <a class="mt-4 md:-ml-6 md:pl-6 bg-[url(/img/icones/telefone.svg)] bg-no-repeat bg-left" href="tel:+552199990000">+55 (85) 99999-0000</a>
-        </address>
-        <div class="flex pt-8 gap-5">
-          <a href="#"><img src="img/redes/youtube-p.svg" alt=""></a>
-          <a href="#"><img src="img/redes/instagram-p.svg" alt=""></a>
-          <a href="#"><img src="img/redes/facebook-p.svg" alt=""></a>
-        </div>
-      </section>
-      <section class="px-16 py-16">
-        <form class="grid grid-cols-2 gap-6" action="./">
-          <div>
-            <label class="font-semibold text-lg" for="nome">Nome</label>
-            <input class="bg-[#f7f7f7] border-2 border-[#b2b2b2] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white" type="text" id="nome" placeholder="Digite seu nome">
-          </div>
-          <div class="col-start-2">
-            <label class="font-semibold text-lg" for="telefone">Telefone</label>
-            <input class="bg-[#f7f7f7] border-2 border-[#b2b2b2] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white" type="text" id="telefone" placeholder="(85) 9999-9999">
-          </div>
-          <div class="col-span-2">
-            <label class="font-semibold text-lg" for="email">Email</label>
-            <input class="bg-[#f7f7f7] border-2 border-[#b2b2b2] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white" type="email" id="email" placeholder="contato@gmail.com">
-          </div>
-          <div class="col-span-2">
-            <label class="font-semibold text-lg" for="mensagem">Mensagem</label>
-            <textarea class="bg-[#f7f7f7] border-2 border-[#b2b2b2] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white" id="mensagem" name="mensagem" rows="5" placeholder="O que você precisa"></textarea>
-          </div>
-        </form>
-      </section>
-    </div>
-  </main>
+  <div class="grid grid-cols-1 md:grid-cols-[5fr_7fr] max-w-300 mx-auto px-4 pb-16">
+    <!--sessão de dados-->
+    <section class="bg-[#000000] text-white p-6 md:p-16 rounded-t-md md:rounded-t-none md:rounded-l-md shadow-sm md:bg-[url('/img/dec/bottom-left.svg')] bg-no-repeat bg-[bottom_20px_left_20px]">
 
-  <footer class="bg-[#000000] text-white">
-      <div class="max-w-300 mx-auto py-16 px-4 md:px-0 grid grid-cols-1 md:grid-cols-3">
-        <img class="hidden md:flex" src="img/bikcraft.svg" alt="">
+      <h2 class="text-xl font-bold mb-8 md:mb-16 uppercase text-[#b2b2b2]">loja online</h2>
+
+      <address class="not-italic mb-8 pl-8 bg-[url('/img/icones/local.svg')] bg-no-repeat bg-[position:0px_2px]">
+        <p class="mb-2 text-[#b2b2b2]">Rua 1, 1185 - Brejo Santo</p>
+        <p class="mb-2 text-[#b2b2b2]">Fortaleza - CE</p>
+        <p class="mb-2 text-[#b2b2b2]">Brasil - Terra - Via Láctea</p>
+      </address>
+
+      <address class="not-italic mb-8 md:mb-16 flex flex-col">
+        <a class="w-fit mb-2 pl-8 bg-[url('/img/icones/email.svg')] bg-no-repeat bg-[position:0px_2px] text-[#b2b2b2] hover:text-white transition-colors" href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+
+        <a class="w-fit mb-8 pl-8 text-[#b2b2b2] hover:text-white transition-colors" href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+
+        <a class="w-fit mb-8 md:mb-0 pl-8 bg-[url('/img/icones/telefone.svg')] bg-no-repeat text-[#b2b2b2] hover:text-white transition-colors" href="tel:+5585999990000">+55 (85) 99999-0000</a>
+      </address>
+
+      <div class="flex gap-8 pl-8 mb-4 md:mb-0">
+        <a class="hover:scale-110 transition-transform" href="#"><img src="img/redes/youtube-p.svg" alt="YouTube"></a>
+        <a class="hover:scale-110 transition-transform" href="#"><img src="img/redes/instagram-p.svg" alt="Instagram"></a>
+        <a class="hover:scale-110 transition-transform" href="#"><img src="img/redes/facebook-p.svg" alt="Facebook"></a>
+      </div>
+    </section>
+    <!--sessão do formulário-->
+    <section class="bg-white p-6 md:p-16 rounded-b-md md:rounded-r-md shadow-sm bg-[url('/img/dec/bottom-right.svg')] bg-no-repeat bg-[position:bottom_20px_right_20px]">
+
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6" action="./">
         <div>
-          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Contatos</h3>
-          <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
-            <li>+55 (85) 99999-0000</li>
-            <li class="relative">contatobikecraft@gmail.com <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
-            <li>Rua 1, 1185 - Brejo Santo</li>
-            <li class="relative">Forteleza - CE <span class="before:absolute before:content-[''] before:h-px before:w-8/12 before:bg-[#2e2e2e] before:-bottom-2 before:left-0"></span></li>
-          </ul>
-          <div class="flex pt-8 pb-16 gap-8">
-            <a href="#"><img src="img/redes/youtube.svg" alt=""></a>
-            <a href="#"><img src="img/redes/instagram.svg" alt=""></a>
-            <a href="#"><img src="img/redes/facebook.svg" alt=""></a>
-          </div>
+          <label class="font-semibold text-lg block mb-2" for="nome">Nome</label>
+          <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="nome" placeholder="Digite seu nome">
         </div>
 
         <div>
-          <h3 class="mb-8 text-lg md:text-2xl uppercase font-bold">Informações</h3>
-          <div>
-            <nav>
-              <ul class="flex flex-col gap-4 text-lg text-[#b2b2b2] font-semibold">
-                <li><a class="hover:text-white" href="#">Bicicletas</a></li>
-                <li><a class="hover:text-white" href="#">Seguros</a></li>
-                <li><a class="hover:text-white" href="#">Contatos</a></li>
-                <li><a class="hover:text-white" href="#">Termos e condições</a></li>
-              </ul>
-            </nav>
-          </div>
+          <label class="font-semibold text-lg block mb-2" for="telefone">Telefone</label>
+          <input type="number" class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" id="telefone" placeholder="(85) 9999-9999">
         </div>
-        <p class="text-lg text-[#b2b2b2] font-semibold mt-10">Bikcraft © Alguns direitos reservados.</p>
-      </div>
-    </footer>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold text-lg block mb-2" for="email">Email</label>
+          <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="email" id="email" placeholder="contato@gmail.com">
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="font-semibold text-lg block mb-2" for="mensagem">Mensagem</label>
+          <textarea class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" id="mensagem" name="mensagem" rows="5" placeholder="O que você precisa"></textarea>
+        </div>
+
+        <div class="md:col-span-2 mt-4">
+          <button class="cursor-pointer bg-[#ffbb00] hover:bg-[#e4a30b] text-[#332200] py-4 px-8 rounded font-bold uppercase transition-colors" type="submit">
+            Enviar Mensagem
+          </button>
+        </div>
+      </form>
+
+    </section>
+  </div>
+</main>
+
 </body>
 </html>
