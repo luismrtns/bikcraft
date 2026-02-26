@@ -64,7 +64,7 @@
       </div>
     </header>
   
-  <main>
+  <main class="bg-[linear-gradient(#111111_600px,#f5f5f5_0%)]">
     <div class="bg-[#111111] text-white py-16 px-4 md:px-0">
       <div class="max-w-300 mx-auto">
         <p class="text-[#b2b2b2] text-2xl uppercase font-semibold">Cotações no seu email</p>
@@ -72,48 +72,74 @@
       </div>
     </div>
 
-      <form class="grid grid-cols-1 md:grid-cols-[5fr_7fr] max-w-300 mx-auto px-4 pb-16 bg-[linear-gradient(#111111_600px,#f5f5f5_0%)]" action="./">
-          <div class="text-white p-16 bg-[#000000]">
-              <h2 class="relative flex items-center uppercase text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">Bikcraft ou seguro?</h2>
-              <input type="radio" name="tipo" value="bikcraft" id="bikcraft"/>
-              <label for="bikcraft">Bikcraft</label>
+      <form class="grid grid-cols-1 md:grid-cols-[5fr_7fr] max-w-300 mx-auto px-4 pb-16" action="./">
+          <div class="text-white p-6 md:p-16 bg-[#000000]">
+              <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-6">
+                  Bikcraft ou seguro?
+              </h2>
+              <input class="peer/bikcraft sr-only" type="radio" name="tipo" value="bikcraft" id="bikcraft" />
+              <label class="inline-flex items-center gap-2 p-2 mr-4 mb-2 md:mb-8 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/bikcraft:hover:text-white peer-checked/bikcraft:bg-white peer-checked/bikcraft:text-[#111111] peer-checked/bikcraft:border-[#ffbb00] peer-checked/bikcraft:[&_.bolinha]:bg-[#ffbb00] peer-checked/bikcraft:[&_.circulo]:border-[#ffbb00]" for="bikcraft">
+                  <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                      <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                  </span>
+                  <span class="font-bold uppercase">Bikcraft</span>
+              </label>
 
-              <input type="radio" name="tipo" value="seguro" id="seguro"/>
-              <label for="seguro">Seguro</label>
+              <input class="peer/seguro sr-only" type="radio" name="tipo" value="seguro" id="seguro"/>
+              <label class="inline-flex items-center gap-2 p-2 mr-4 mb-2 md:mb-8 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/seguro:hover:text-white peer-checked/seguro:bg-white peer-checked/seguro:text-[#111111] peer-checked/seguro:border-[#ffbb00] peer-checked/seguro:[&_.bolinha]:bg-[#ffbb00] peer-checked/seguro:[&_.circulo]:border-[#ffbb00]" for="seguro">
+                  <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                      <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                  </span>
+                  <span class="font-bold uppercase">seguro</span>
+              </label>
 
-              <div id="orcamento-bikcraft">
-                  <h2 class="relative flex items-center uppercase text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">Escolha a sua Bikcraft</h2>
+
+              <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/bikcraft:grid-rows-[1fr] peer-checked/bikcraft:opacity-100">
+                  <div class="overflow-hidden">
+                      <div class="bg-[#111111] p-6 rounded mt-4" id="orcamento-bikcraft">
+                          <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-4">Escolha a sua Bikcraft</h2>
+                          <p class="text-[#b2b2b2]">Opções exclusivas de personalização da sua Bikcraft.</p>
+                      </div>
+                  </div>
               </div>
-              <div id="orcamento-seguro">
-                  <h2 class="relative flex items-center uppercase text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">Escolha seu seguro</h2>
+
+              <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/seguro:grid-rows-[1fr] peer-checked/seguro:opacity-100">
+                  <div class="overflow-hidden">
+                      <div class="bg-[#111111] p-6 rounded mt-4" id="orcamento-seguro">
+                          <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-4">Escolha seu seguro</h2>
+                          <p class="text-[#b2b2b2]">Proteja sua Bikcraft com nossos planos de seguro.</p>
+                      </div>
+                  </div>
               </div>
+
           </div>
+
           <!-- dados pessoais e entrega-->
-          <div class="bg-white p-8">
-              <h2 class="uppercase text-[#b2b2b2] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados pessoais</h2>
-              <div>
+          <div class="bg-white p-8 grid grid-cols-2 gap-4">
+              <h2 class="cols-start-1 uppercase text-sm text-[#2e2e2e] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados pessoais</h2>
+              <div class="col-start-1">
                   <label class="font-semibold text-lg block mb-2" for="nome">Nome</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="nome" placeholder="Digite seu nome">
               </div>
 
-              <div>
+              <div class="col-start-2">
                   <label class="font-semibold text-lg block mb-2" for="sobrenome">Sobrenome</label>
-                  <input type="number" class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" id="sobrenome" placeholder="(85) 9999-9999">
+                  <input type="text" class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" id="sobrenome" placeholder="Digite seu sobrenome">
               </div>
 
-              <div>
+              <div class="col-span-2">
                   <label class="font-semibold text-lg block mb-2" for="cpf">CPF</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="cpf" placeholder="000.000.000-00">
               </div>
 
-              <div>
+              <div class="col-span-2">
                   <label class="font-semibold text-lg block mb-2" for="email">Email</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="email" id="email" placeholder="seuemail@gmail.com">
               </div>
 
-              <h2 class="uppercase text-[#b2b2b2] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados de entrega</h2>
+              <h2 class="col-start-1 uppercase text-sm text-[#2e2e2e] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados de entrega</h2>
 
-              <div>
+              <div class="col-start-1">
                   <label class="font-semibold text-lg block mb-2" for="cep">CEP</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="cep" placeholder="00000-000">
               </div>
