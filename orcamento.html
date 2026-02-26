@@ -73,6 +73,7 @@
     </div>
 
       <form class="grid grid-cols-1 md:grid-cols-[5fr_7fr] max-w-300 mx-auto px-4 pb-16" action="./">
+          <!--bicicletas e seguro-->
           <div class="text-white p-6 md:p-16 bg-[#000000]">
               <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-6">
                   Bikcraft ou seguro?
@@ -82,7 +83,7 @@
                   <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
                       <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
                   </span>
-                  <span class="font-bold uppercase">Bikcraft</span>
+                  <span class="font-semibold text-lg">Bikcraft</span>
               </label>
 
               <input class="peer/seguro sr-only" type="radio" name="tipo" value="seguro" id="seguro"/>
@@ -90,24 +91,130 @@
                   <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
                       <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
                   </span>
-                  <span class="font-bold uppercase">seguro</span>
+                  <span class="font-semibold text-lg">Seguro</span>
               </label>
-
-
+                <!--bicicletas-->
               <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/bikcraft:grid-rows-[1fr] peer-checked/bikcraft:opacity-100">
                   <div class="overflow-hidden">
-                      <div class="bg-[#111111] p-6 rounded mt-4" id="orcamento-bikcraft">
+                      <div class="bg-[#111111] p-6 rounded mt-4 flex flex-col" id="orcamento-bikcraft">
                           <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-4">Escolha a sua Bikcraft</h2>
-                          <p class="text-[#b2b2b2]">Opções exclusivas de personalização da sua Bikcraft.</p>
+                            <!--nimbus-->
+                          <input class="peer/nimbus sr-only" type="radio" name="modelo" value="nimbus" id="nimbus" />
+                          <label class="flex items-center gap-2 p-2 mb-2 md:mb-5 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/nimbus:hover:text-white peer-checked/nimbus:bg-white peer-checked/nimbus:text-[#111111] peer-checked/nimbus:border-[#ffbb00] peer-checked/nimbus:[&_.bolinha]:bg-[#ffbb00] peer-checked/nimbus:[&_.circulo]:border-[#ffbb00]" for="nimbus">
+                              <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                                  <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                              </span>
+                              <span class="font-semibold text-lg">Nimbus</span>
+                              <span class="ml-auto">R$4999</span>
+                          </label>
+                            <!--nimbus info-->
+                          <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/nimbus:grid-rows-[1fr] peer-checked/nimbus:opacity-100">
+                              <div class="overflow-hidden">
+                                  <div class="bg-[#000000] text-white rounded p-4 flex flex-col md:flex-row items-center gap-6">
+                                      <img class="w-full md:w-40 h-28 object-cover rounded" src="img/bicicletas/nimbus.jpg" alt="Bicicleta Nimbus">
+                                      <ul class="text-sm font-semibold flex flex-col gap-2 w-full">
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/eletrica.svg" class="w-4 h-4" alt=""> Motor Elétrico
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/carbono.svg" class="w-4 h-4" alt=""> Fibra de Carbono
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/velocidade.svg" class="w-4 h-4" alt=""> 50 km/h
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/rastreador.svg" class="w-4 h-4" alt=""> Rastreador
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!--nebula-->
+                          <input class="peer/nebula sr-only" type="radio" name="modelo" value="nebula" id="nebula" />
+                          <label class="flex items-center gap-2 p-2 mb-2 md:mb-5 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/nebula:hover:text-white peer-checked/nebula:bg-white peer-checked/nebula:text-[#111111] peer-checked/nebula:border-[#ffbb00] peer-checked/nebula:[&_.bolinha]:bg-[#ffbb00] peer-checked/nebula:[&_.circulo]:border-[#ffbb00]" for="nebula">
+                              <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                                  <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                              </span>
+                              <span class="font-semibold text-lg">Nebula</span>
+                              <span class="ml-auto">R$3999</span>
+                          </label>
+                          <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/nebula:grid-rows-[1fr] peer-checked/nebula:opacity-100">
+                            <div class="overflow-hidden">
+                                <div class="bg-[#000000] text-white rounded p-4 flex flex-col md:flex-row items-center gap-6">
+                                    <img class="w-full md:w-40 h-28 object-cover rounded" src="img/bicicletas/nebula.jpg" alt="">
+                                    <ul class="text-sm font-semibold flex flex-col gap-2 w-full">
+                                        <li class="flex items-center gap-2">
+                                            <img src="img/icones/eletrica.svg" class="w-4 h-4" alt=""> Motor Elétrico
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="img/icones/carbono.svg" class="w-4 h-4" alt=""> Fibra de Carbono
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="img/icones/velocidade.svg" class="w-4 h-4" alt=""> 50 km/h
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <img src="img/icones/rastreador.svg" class="w-4 h-4" alt=""> Rastreador
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+                            <!--magic-->
+                          <input class="peer/magic sr-only" type="radio" name="modelo" value="magic" id="magic" />
+                          <label class="flex items-center gap-2 p-2 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/magic:hover:text-white peer-checked/magic:bg-white peer-checked/magic:text-[#111111] peer-checked/magic:border-[#ffbb00] peer-checked/magic:[&_.bolinha]:bg-[#ffbb00] peer-checked/magic:[&_.circulo]:border-[#ffbb00]" for="magic">
+                              <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                                  <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                              </span>
+                              <span class="font-semibold text-lg">Magic</span>
+                              <span class="ml-auto">R$2999</span>
+                          </label>
+                          <!--magic info-->
+                          <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/magic:grid-rows-[1fr] peer-checked/magic:opacity-100">
+                              <div class="overflow-hidden">
+                                  <div class="bg-[#000000] text-white rounded p-4 flex flex-col md:flex-row items-center gap-6">
+                                      <img class="w-full md:w-40 h-28 object-cover rounded" src="img/bicicletas/magic.jpg" alt="">
+                                      <ul class="text-sm font-semibold flex flex-col gap-2 w-full">
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/eletrica.svg" class="w-4 h-4" alt=""> Motor Elétrico
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/carbono.svg" class="w-4 h-4" alt=""> Fibra de Carbono
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/velocidade.svg" class="w-4 h-4" alt=""> 50 km/h
+                                          </li>
+                                          <li class="flex items-center gap-2">
+                                              <img src="img/icones/rastreador.svg" class="w-4 h-4" alt=""> Rastreador
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
-
+                <!--seguros-->
               <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-400 ease-in-out peer-checked/seguro:grid-rows-[1fr] peer-checked/seguro:opacity-100">
                   <div class="overflow-hidden">
                       <div class="bg-[#111111] p-6 rounded mt-4" id="orcamento-seguro">
                           <h2 class="relative flex items-center uppercase text-sm text-[#b2b2b2] font-semibold before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3 mb-4">Escolha seu seguro</h2>
-                          <p class="text-[#b2b2b2]">Proteja sua Bikcraft com nossos planos de seguro.</p>
+                          <input class="peer/prata sr-only" type="radio" name="modelo" value="prata" id="prata" />
+                          <label class="flex items-center gap-2 p-2 mb-2 md:mb-5 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/prata:hover:text-white peer-checked/prata:bg-white peer-checked/prata:text-[#111111] peer-checked/prata:border-[#ffbb00] peer-checked/prata:[&_.bolinha]:bg-[#ffbb00] peer-checked/prata:[&_.circulo]:border-[#ffbb00]" for="prata">
+                              <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                                  <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                              </span>
+                              <span class="font-semibold text-lg">Prata</span>
+                              <span class="ml-auto">R$199</span>
+                          </label>
+                          <input class="peer/ouro sr-only" type="radio" name="modelo" value="ouro" id="ouro" />
+                          <label class="flex items-center gap-2 p-2 mb-2 md:mb-5 rounded cursor-pointer border-2 border-transparent transition-all bg-[#111111] text-[#b2b2b2] hover:bg-[#2e2e2e] peer-checked/ouro:hover:text-white peer-checked/ouro:bg-white peer-checked/ouro:text-[#111111] peer-checked/ouro:border-[#ffbb00] peer-checked/ouro:[&_.bolinha]:bg-[#ffbb00] peer-checked/ouro:[&_.circulo]:border-[#ffbb00]" for="ouro">
+                              <span class="circulo w-4 h-4 rounded-full border-2 border-[#b2b2b2] flex items-center justify-center transition-colors">
+                                  <span class="bolinha w-2 h-2 rounded-full bg-transparent transition-colors"></span>
+                              </span>
+                              <span class="font-semibold text-lg">Ouro</span>
+                              <span class="ml-auto">R$299</span>
+                          </label>
                       </div>
                   </div>
               </div>
@@ -115,31 +222,31 @@
           </div>
 
           <!-- dados pessoais e entrega-->
-          <div class="bg-white p-8 grid grid-cols-2 gap-4">
+          <div class="bg-white p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
               <h2 class="cols-start-1 uppercase text-sm text-[#2e2e2e] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados pessoais</h2>
-              <div class="col-start-1">
+              <div class="md:col-start-1">
                   <label class="font-semibold text-lg block mb-2" for="nome">Nome</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="nome" placeholder="Digite seu nome">
               </div>
 
-              <div class="col-start-2">
+              <div class="md:col-start-2">
                   <label class="font-semibold text-lg block mb-2" for="sobrenome">Sobrenome</label>
                   <input type="text" class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" id="sobrenome" placeholder="Digite seu sobrenome">
               </div>
 
-              <div class="col-span-2">
+              <div class="md:col-span-2">
                   <label class="font-semibold text-lg block mb-2" for="cpf">CPF</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="cpf" placeholder="000.000.000-00">
               </div>
 
-              <div class="col-span-2">
+              <div class="md:col-span-2">
                   <label class="font-semibold text-lg block mb-2" for="email">Email</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="email" id="email" placeholder="seuemail@gmail.com">
               </div>
 
-              <h2 class="col-start-1 uppercase text-sm text-[#2e2e2e] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados de entrega</h2>
+              <h2 class="md:col-start-1 uppercase text-sm text-[#2e2e2e] font-semibold relative flex items-center before:absolute before:content-[''] before:w-1 before:h-2 before:inline-block before:bg-[#ffbb00] before:-left-3">dados de entrega</h2>
 
-              <div class="col-start-1">
+              <div class="md:col-start-1">
                   <label class="font-semibold text-lg block mb-2" for="cep">CEP</label>
                   <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="cep" placeholder="00000-000">
               </div>
