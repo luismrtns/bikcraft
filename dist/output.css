@@ -233,15 +233,6 @@
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-  .col-start-1 {
-    grid-column-start: 1;
-  }
-  .col-start-2 {
-    grid-column-start: 2;
-  }
   .row-start-1 {
     grid-row-start: 1;
   }
@@ -455,12 +446,6 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-start {
-    justify-content: flex-start;
-  }
-  .justify-items-start {
-    justify-items: start;
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -505,10 +490,6 @@
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
   }
-  .rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-  }
   .rounded-b-md {
     border-bottom-right-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md);
@@ -520,10 +501,6 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
-  }
-  .border-x-2 {
-    border-inline-style: var(--tw-border-style);
-    border-inline-width: 2px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -549,20 +526,11 @@
   .border-\[\#f7f7f7\] {
     border-color: #f7f7f7;
   }
-  .border-\[\#ffbb00\] {
-    border-color: #ffbb00;
-  }
   .border-transparent {
     border-color: transparent;
   }
-  .bg-\[\#00000\] {
-    background-color: #00000;
-  }
   .bg-\[\#000000\] {
     background-color: #000000;
-  }
-  .bg-\[\#111\] {
-    background-color: #111;
   }
   .bg-\[\#111111\] {
     background-color: #111111;
@@ -711,9 +679,6 @@
   .text-left {
     text-align: left;
   }
-  .text-right {
-    text-align: right;
-  }
   .font-\[Google_Sans\] {
     font-family: Google Sans;
   }
@@ -771,9 +736,6 @@
   }
   .text-\[\#9c9c9c\] {
     color: #9c9c9c;
-  }
-  .text-\[\#111111\] {
-    color: #111111;
   }
   .text-\[\#332200\] {
     color: #332200;
@@ -898,6 +860,11 @@
       }
     }
   }
+  .group-\[\.ativo\]\:w-8 {
+    &:is(:where(.group):is(.ativo) *) {
+      width: calc(var(--spacing) * 8);
+    }
+  }
   .peer-checked\/bikcraft\:grid-rows-\[1fr\] {
     &:is(:where(.peer\/bikcraft):checked ~ *) {
       grid-template-rows: 1fr;
@@ -921,21 +888,6 @@
   .peer-checked\/bikcraft\:opacity-100 {
     &:is(:where(.peer\/bikcraft):checked ~ *) {
       opacity: 100%;
-    }
-  }
-  .peer-checked\/bikcraft-bicicleta\:border-\[\#ffbb00\] {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
-      border-color: #ffbb00;
-    }
-  }
-  .peer-checked\/bikcraft-bicicleta\:bg-white {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
-      background-color: var(--color-white);
-    }
-  }
-  .peer-checked\/bikcraft-bicicleta\:text-\[\#111111\] {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
-      color: #111111;
     }
   }
   .peer-checked\/magic\:grid-rows-\[1fr\] {
@@ -1248,15 +1200,6 @@
       }
     }
   }
-  .peer-checked\/bikcraft-bicicleta\:hover\:text-white {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-white);
-        }
-      }
-    }
-  }
   .peer-checked\/magic\:hover\:text-white {
     &:is(:where(.peer\/magic):checked ~ *) {
       &:hover {
@@ -1360,11 +1303,6 @@
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:mb-4 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 4);
     }
   }
   .md\:mb-5 {
@@ -1738,13 +1676,6 @@
       }
     }
   }
-  .peer-checked\/bikcraft-bicicleta\:\[\&_\.bolinha\]\:bg-\[\#ffbb00\] {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
-      & .bolinha {
-        background-color: #ffbb00;
-      }
-    }
-  }
   .peer-checked\/magic\:\[\&_\.bolinha\]\:bg-\[\#ffbb00\] {
     &:is(:where(.peer\/magic):checked ~ *) {
       & .bolinha {
@@ -1789,13 +1720,6 @@
   }
   .peer-checked\/bikcraft\:\[\&_\.circulo\]\:border-\[\#ffbb00\] {
     &:is(:where(.peer\/bikcraft):checked ~ *) {
-      & .circulo {
-        border-color: #ffbb00;
-      }
-    }
-  }
-  .peer-checked\/bikcraft-bicicleta\:\[\&_\.circulo\]\:border-\[\#ffbb00\] {
-    &:is(:where(.peer\/bikcraft-bicicleta):checked ~ *) {
       & .circulo {
         border-color: #ffbb00;
       }
