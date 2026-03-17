@@ -26,13 +26,17 @@ parametros.forEach(ativarProduto)
 
 //mudar imagens bicicletas
 const imagens = document.querySelectorAll('.container-img .img-bicicletas img')
-console.log(imagens)
+// console.log(imagens)
 
 function galeriaTrocar(event){
-  let principal = document.querySelector('.img-principal')
-  let clicada = event.currentTarget
-  principal.src = clicada.src
-  principal.alt = clicada.alt
+  let telaDesktop = window.matchMedia('(min-width:768px)').matches
+  console.log(telaDesktop)
+  if(telaDesktop){
+    let principal = document.querySelector('.img-principal')
+    let clicada = event.currentTarget
+    principal.src = clicada.src
+    principal.alt = clicada.alt
+  }
 }
 
 function galeriaClick(imagem){
