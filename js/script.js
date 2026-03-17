@@ -1,9 +1,9 @@
 //ativar links do menu
 const links = document.querySelectorAll('.header-menu a');
-console.log(links)
+// console.log(links)
 function ativarLink(link){
-  const url = location.href
-  const href= link.href
+  const url = location.href // é a página atual do site
+  const href= link.href // Isso pega a informação de para onde aquele link específico aponta.
 
   if(url.includes(href)){
     link.classList.add('ativo')
@@ -19,10 +19,27 @@ function ativarProduto(parametro){
   if(elemento){
   elemento.checked = true
   }
-  console.log(elemento)
+  // console.log(elemento)
 }
 parametros.forEach(ativarProduto)
-console.log(parametros)
+// console.log(parametros)
+
+//mudar imagens bicicletas
+const imagens = document.querySelectorAll('.container-img .img-bicicletas img')
+console.log(imagens)
+
+function galeriaTrocar(event){
+  let principal = document.querySelector('.img-principal')
+  let clicada = event.currentTarget
+  principal.src = clicada.src
+  principal.alt = clicada.alt
+}
+
+function galeriaClick(imagem){
+  imagem.addEventListener('click', galeriaTrocar)
+}
+
+imagens.forEach(galeriaClick)
 // const params = new URLSearchParams(location.search);
 //
 // params.forEach((item) => {

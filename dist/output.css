@@ -865,6 +865,16 @@
       width: calc(var(--spacing) * 8);
     }
   }
+  .group-\[\.ativo\]\:w-16 {
+    &:is(:where(.group):is(.ativo) *) {
+      width: calc(var(--spacing) * 16);
+    }
+  }
+  .group-\[\.ativo\]\:w-18 {
+    &:is(:where(.group):is(.ativo) *) {
+      width: calc(var(--spacing) * 18);
+    }
+  }
   .peer-checked\/bikcraft\:grid-rows-\[1fr\] {
     &:is(:where(.peer\/bikcraft):checked ~ *) {
       grid-template-rows: 1fr;
