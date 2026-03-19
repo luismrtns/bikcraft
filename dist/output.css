@@ -7,6 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-green-50: oklch(98.2% 0.018 155.826);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -526,6 +532,12 @@
   .border-\[\#f7f7f7\] {
     border-color: #f7f7f7;
   }
+  .border-green-500 {
+    border-color: var(--color-green-500);
+  }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
   .border-transparent {
     border-color: transparent;
   }
@@ -552,6 +564,18 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-green-50 {
+    background-color: var(--color-green-50);
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+  .bg-red-50 {
+    background-color: var(--color-red-50);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-transparent {
     background-color: transparent;
@@ -679,8 +703,8 @@
   .text-left {
     text-align: left;
   }
-  .font-\[Google_Sans\] {
-    font-family: Google Sans;
+  .font-\[Inter\] {
+    font-family: Inter;
   }
   .font-\[Merriweather\] {
     font-family: Merriweather;
@@ -766,6 +790,12 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-green-800 {
+    color: var(--color-green-800);
+  }
+  .text-red-800 {
+    color: var(--color-red-800);
   }
   .text-white {
     color: var(--color-white);
@@ -863,16 +893,6 @@
   .group-\[\.ativo\]\:w-8 {
     &:is(:where(.group):is(.ativo) *) {
       width: calc(var(--spacing) * 8);
-    }
-  }
-  .group-\[\.ativo\]\:w-16 {
-    &:is(:where(.group):is(.ativo) *) {
-      width: calc(var(--spacing) * 16);
-    }
-  }
-  .group-\[\.ativo\]\:w-18 {
-    &:is(:where(.group):is(.ativo) *) {
-      width: calc(var(--spacing) * 18);
     }
   }
   .peer-checked\/bikcraft\:grid-rows-\[1fr\] {

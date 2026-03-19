@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="src/input.css" />
     <link rel="stylesheet" href="dist/output.css" />
     <script src="./js/script.js" defer></script>
+    <script src="./js/formulario.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
@@ -88,7 +89,7 @@
     <!--sessão do formulário-->
     <section class="bg-white p-6 md:p-16 rounded-b-md md:rounded-r-md shadow-sm bg-[url('/img/dec/bottom-right.svg')] bg-no-repeat bg-[position:bottom_20px_right_20px]">
 
-      <form class="grid grid-cols-1 md:grid-cols-2 gap-6" action="./">
+      <form method="post" class="grid grid-cols-1 md:grid-cols-2 gap-6" action="./enviar.php">
         <div>
           <label class="font-semibold text-lg block mb-2" for="nome">Nome</label>
           <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="text" id="nome" placeholder="Digite seu nome">
@@ -101,7 +102,7 @@
 
         <div class="md:col-span-2">
           <label class="font-semibold text-lg block mb-2" for="email">Email</label>
-          <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="email" id="email" placeholder="contato@gmail.com">
+          <input class="bg-[#f7f7f7] border border-[#f7f7f7] rounded p-3 w-full focus:outline-none focus:border-[#ffbb00] focus:bg-white transition-colors" type="email" name="email" id="email" placeholder="contato@gmail.com" required>
         </div>
 
         <div class="md:col-span-2">
